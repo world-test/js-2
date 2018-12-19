@@ -1,4 +1,4 @@
-let whichNum = parseInt(prompt('Enter which number u want:'));
+let whichNum = parseInt(prompt('Enter number:'));
 
 function recursion(n) {
     if (n <= 2) {
