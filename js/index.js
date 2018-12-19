@@ -8,11 +8,11 @@ function recursion(n) {
 }
 
 function matrix(n) {
-    let arr = [1, 1];
+    let matrix = [1, 1];
     for (i = 2; i <= n; i++) {
-        arr.push(arr[i - 1] + arr[i - 2]);
+        matrix.push(matrix[i - 1] + matrix[i - 2]);
     }
-    return arr[n - 1];
+    return matrix[n - 1];
 }
 
 function variables(n) {
@@ -26,6 +26,6 @@ function variables(n) {
     }
     return next;
 }
-document.write(`Method variables : ${variables(whichNum)} <br>
+document.write(`Recursion method: ${recursion(whichNum)} <br>
 Matrix method: ${matrix(whichNum)} <br>
-Recursion method: ${recursion(whichNum)}`);
+Method variables : ${variables(whichNum)}`);
