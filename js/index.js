@@ -7,10 +7,10 @@ function recursion(n) {
     return recursion(n - 1) + recursion(n - 2);
 }
 
-function matrix(n) {
-    let matrix = [1, 1];
+function mas(n) {
+    let mas = [1, 1];
     for (i = 2; i <= n; i++) {
-        matrix.push(matrix[i - 1] + matrix[i - 2]);
+        mas.push(mas[i - 1] + mas[i - 2]);
     }
     return matrix[n - 1];
 }
@@ -27,5 +27,5 @@ function variables(n) {
     return next;
 }
 document.write(`Recursion method: ${recursion(whichNum)} <br>
-Matrix method: ${matrix(whichNum)} <br>
+Mas method: ${mas(whichNum)} <br>
 Method variables : ${variables(whichNum)}`);
